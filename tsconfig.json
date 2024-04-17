@@ -1,28 +1,56 @@
+/**
+ * Copyright 2024 Whatssub Co., Ltd. All rights reserved.
+ *
+ * This source code is licensed under the
+ * LICENSE file in the root directory of this source tree.
+ */
 {
+  /* Schema */
+  "$schema": "https://json.schemastore.org/tsconfig",
+
+  /* Compiler Options */
   "compilerOptions": {
+    /* Language and Environment */
+    "target": "esnext",
+    "lib": ["esnext"],
+    "jsx": "react-jsx",
     "rootDir": ".",
     "paths": {
       "react-native-navigation-bar-height": ["./src/index"]
     },
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "lib": ["esnext"],
+
+    /* Modules */
     "module": "esnext",
     "moduleResolution": "node",
+
+    /* Emit */
+    "declaration": true,
+    "removeComments": false,
+    "sourceMap": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noStrictGenericChecks": false,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
+
+    /* Advanced Options */
     "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext",
+    "resolveJsonModule": true,
     "verbatimModuleSyntax": true
   }
 }
