@@ -27,7 +27,6 @@
   ],
   "scripts": {
     "example": "yarn workspace react-native-navigation-bar-height-example",
-    "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
