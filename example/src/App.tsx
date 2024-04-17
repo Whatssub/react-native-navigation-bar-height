@@ -1,21 +1,23 @@
-import * as React from 'react';
+/**
+ * Copyright 2024 Whatssub Co., Ltd. All rights reserved.
+ *
+ * This source code is licensed under the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-navigation-bar-height';
 
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+import { useAndroidNavigationBarHeight } from 'react-native-navigation-bar-height';
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+const App = () => {
+  const height = useAndroidNavigationBarHeight();
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {height}</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -29,3 +31,5 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
 });
+
+export default App;

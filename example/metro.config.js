@@ -1,7 +1,16 @@
-const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+/**
+ * Copyright 2024 Whatssub Co., Ltd. All rights reserved.
+ *
+ * This source code is licensed under the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 const path = require('path');
+
+const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
 const escape = require('escape-string-regexp');
 const exclusionList = require('metro-config/src/defaults/exclusionList');
+
 const pak = require('../package.json');
 
 const root = path.resolve(__dirname, '..');
