@@ -1,6 +1,6 @@
 {
   "name": "react-native-navigation-bar-height",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get android's navigation bar height when app has been focused",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
